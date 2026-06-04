@@ -179,7 +179,7 @@ const db  = getDatabase(app);
 
 let durHours = 2, activeSid = null, tickerInt = null, expiryMs = null;
 
-function genId(){ return Math.random().toString(36).slice(2,10) + Date.now().toString(36); }
+function genId(){ return 'S' + Math.random().toString(36).slice(2,10) + Math.random().toString(36).slice(2,6); }
 function hide(id){ document.getElementById(id).style.display='none'; }
 function show(id, d='block'){ document.getElementById(id).style.display=d; }
 
